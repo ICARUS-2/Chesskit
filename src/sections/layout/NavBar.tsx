@@ -61,7 +61,7 @@ export default function NavBar({ darkMode, switchDarkMode }: Props) {
 
           <Image
             src="favicon-32x32.png"
-            alt="Chesskit logo"
+            alt="DA3DALU5 SYSTEMS LOGO"
             width={32}
             height={32}
           />
@@ -81,7 +81,7 @@ export default function NavBar({ darkMode, switchDarkMode }: Props) {
           </NavLink>
 
           <StyledIconButtonLink
-            href="https://github.com/ICARUS-2/Chesskit"
+            href="https://github.com/ICARUS-2/chonse"
             target="_blank"
             rel="noopener noreferrer"
             sx={{ ml: "min(0.6rem, 0.8vw)" }}
