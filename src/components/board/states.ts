@@ -5,4 +5,4 @@ export const pieceSetAtom = atomWithStorage<(typeof PIECE_SETS)[number]>(
   "pieceSet",
   "merida"
 );
-export const boardHueAtom = atomWithStorage("boardHue", 0);
+export const boardHueAtom = atomWithStorage("boardHue", 185);

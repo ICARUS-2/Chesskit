@@ -1,12 +1,13 @@
 import { withSentryConfig } from "@sentry/nextjs";
 import { NextConfig } from "next";
 import { PHASE_PRODUCTION_BUILD } from "next/constants";
+const isProd = process.env.NODE_ENV === 'production'; 
 
 const nextConfig = (phase: string): NextConfig => ({
-  output: phase === PHASE_PRODUCTION_BUILD ? "export" : undefined,
-  basePath: "/Chesskit",
-  assetPrefix: "/Chesskit",
-  trailingSlash: false,
+  output: "export",
+  trailingSlash: true,
+  basePath: isProd ? 'https://icarus-2.github.io/Chesskit' : "",
+  assetPrefix: isProd? 'https://icarus-2.github.io/Chesskit' : "",
   reactStrictMode: true,
   images: {
     unoptimized: true,
