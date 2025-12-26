@@ -1,7 +1,7 @@
 import { EngineName, MoveClassification } from "./types/enums";
 
-export const MAIN_THEME_COLOR = "#3B9AC6";
-export const LINEAR_PROGRESS_BAR_COLOR = "#3B9AC6";
+export const MAIN_THEME_COLOR = "#ff00ff";
+export const LINEAR_PROGRESS_BAR_COLOR = "#ff00ff";
 
 export const CLASSIFICATION_COLORS: Record<MoveClassification, string> = {
   [MoveClassification.Opening]: "#dbac86",
